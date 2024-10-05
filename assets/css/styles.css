@@ -1,0 +1,77 @@
+body {
+    background-color:#000 !important;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 3em;
+    color: #000; /* El color clásico amarillo de Star Wars */
+    letter-spacing: 2px;
+    text-shadow: 
+        -2px -2px 0 #FFE81F, 
+        2px -2px 0 #FFE81F, 
+        -2px 2px 0 #FFE81F, 
+        2px 2px 0 #FFE81F; /* Sombra negra para imitar el contorno del texto */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+}
+
+.personajes-principales, .personajes-secundarios, .personajes-significativos {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    background-color: transparent;
+    width: 850px;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px;
+    background-color: transparent;
+}
+
+.rango-principal, .rango-secundario, .rango-significativo{
+    width: 100px;
+    height: 50px;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #FFE81F;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100px;
+    height: 50px;
+}
+
+.tarjeta-personaje{
+    border: 5px solid #FFE81F;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-personaje:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
