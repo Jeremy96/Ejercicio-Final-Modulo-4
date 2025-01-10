@@ -5,7 +5,7 @@
 function* personajesUrls(rango){
     let [inicio, fin] = rango.split('-').map(Number)
     for (let i = inicio; i<= fin && i < inicio + 5; i++){ // aqui se agrega i < inicio + 5 para que se tomen solo 5 personajes por rango
-        yield `https://swapi.dev/api/people/${i}/`
+        yield `https://swapi.tech/api/people/${i}/`
     }
 }
 
