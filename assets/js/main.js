@@ -37,8 +37,8 @@ async function mostrarPersonajes(rango) {
             tarjetaPersonaje.classList.add('tarjeta-personaje')
             tarjetaPersonaje.innerHTML = `
                 <h4>${personaje['result']['properties']['name']}</h4>
-                <p>Altura: ${personaje.height} cm.</p>
-                <p>Peso: ${personaje.mass} kg.</p>
+                <p>Altura: ${personaje['result']['properties']['height']} cm.</p>
+                <p>Peso: ${personaje['result']['properties']['mass']} kg.</p>
             `
             infoPersonajes.appendChild(tarjetaPersonaje)
         }catch (error){
