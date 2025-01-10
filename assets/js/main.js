@@ -36,7 +36,7 @@ async function mostrarPersonajes(rango) {
             const tarjetaPersonaje = document.createElement('div')
             tarjetaPersonaje.classList.add('tarjeta-personaje')
             tarjetaPersonaje.innerHTML = `
-                <h4>${personaje.name}</h4>
+                <h4>${personaje['result']['properties']['name']}</h4>
                 <p>Altura: ${personaje.height} cm.</p>
                 <p>Peso: ${personaje.mass} kg.</p>
             `
